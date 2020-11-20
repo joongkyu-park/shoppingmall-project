@@ -1,4 +1,4 @@
-body{font-family: 'Ubuntu', sans-serif;
+header{font-family: 'Ubuntu', sans-serif;
     }
     html{
         margin:0;
@@ -59,13 +59,32 @@ body{font-family: 'Ubuntu', sans-serif;
         padding-left: 20px;
         padding-right: 20px;
     }
-    #frontimage{
-        text-align: center;
+    #content{
+        padding-left: 250px; 
+        padding-right: 250px;
     }
+    .section-001 img{
+        width: 100%;
+        height: auto;
+    }
+    .section-002 img{
+        width: 100%;
+        height: auto;
+    }
+    .section-003 img{
+        width: auto;
+        height: 700px;
+    }
+    .section-004 img{
+        width: auto;
+        height: 300px;
+    }
+   
     .section-between{
         padding-top: 150px;
     }
     .section-001{
+        width: 100%;
         border:1px solid black;
     }
     .section-002{
@@ -76,39 +95,26 @@ body{font-family: 'Ubuntu', sans-serif;
         align-items: center;
     }
     .section-003{
-        margin-top: 20px;
-        margin-bottom: 20px;
+        width:100%;
+        
+        margin-top: 40px;
+        margin-bottom: 40px;
         border:1px solid yellow;
         display :flex;
-        padding-top: 20px;
-        padding-bottom: 20px;
     }
     .section-004{
+        width:100%;
+
         margin-top: 20px;
         margin-bottom: 20px;
         border:1px solid green;
+        display:flex;
     }
     .section-002-picture-001{
         text-align: center;
         border:1px solid green;
         flex:1;
         
-    }
-    .section-002-picture-002{
-        border:1px solid green;
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    .section-002-picture-003{
-        border:1px solid green;
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    .section-002-picture-merge{
-        flex-direction: column;
-        flex:1;
     }
     .section-003-picture-001{
         flex:1;
@@ -117,4 +123,43 @@ body{font-family: 'Ubuntu', sans-serif;
     .section-003-picture-002{
         flex:1;
         text-align: center;
+    }
+    .section-004-picture-001{
+        flex:1;
+        text-align: center;
+    }
+    .section-004-picture-002{
+        flex:1;
+        text-align: center;
+    }
+    .section-004-picture-003{
+        flex:1;
+        text-align: center;
+    }
+ 
+    a:link{
+        text-decoration: none; color:black;
+    }
+    a:visited{
+        text-decoration: none;color:black;
+    }
+    a:active{
+        text-decoration: none;color:black;
+    }
+    a:hover{
+        text-decoration: none;color:black;
+        opacity: 0.5;
+    }
+    footer pre{
+        display:block;
+        background-color: rgba(241, 241, 241, 0.945);
+        
+        width: 100%;
+        height:200px;
+
+        text-align: center;
+
+        font-family: 'Jua', sans-serif;
+
+        color: gray;
     }
