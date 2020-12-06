@@ -1,0 +1,60 @@
+.container{
+    display : flex;
+    justify-content: space-around;
+
+}
+
+.item{
+    width:350px;
+    height:400px;
+    position: relative;
+    margin: 20px;
+    overflow: auto;
+}
+.item img{
+    width: 260px;
+    height: auto;
+    position: absolute;
+    object-fit: cover;
+}
+.item .cost{
+    padding-top: 63%;
+    position: relative;
+    z-index: 2;
+    visibility: hidden;
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight:bold;
+    line-height: 170%;
+}
+
+.item:hover img{
+    width: 260px;
+    height: auto;
+    position: absolute;
+    object-fit: cover;
+    opacity: 0.2;
+}
+.item:hover .cost{
+    visibility: visible;
+}
+
+.item:hover .cost #brown{
+    color:goldenrod;
+}
+.item:hover .cost #postcost{
+    text-decoration-line: line-through;
+}
+.item .sale{
+    color:white;
+    background-color: goldenrod;
+    width:70px;
+    text-align: center;
+    font-size: small;
+    padding: 3px;
+    position: absolute;
+    top: 0;
+}
+.item:hover .sale{
+    visibility: hidden;
+}

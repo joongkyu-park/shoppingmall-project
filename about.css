@@ -1,4 +1,4 @@
-    header{
+header{
     font-family: 'Ubuntu', sans-serif;
     }
     main{
@@ -86,47 +86,59 @@
     }
    
     .section-001{
-        margin-left:-250px;
-        margin-right:-250px;
+        border:1px solid black;
     }
     .section-002{
         margin-top: 40px;
         margin-bottom: 20px;
+        border:1px solid red;
         align-items: center;
         text-align: center;
-        padding-top: 50px;
-        padding-bottom: 30px;
+
         
-    }
-    .section-002 #one{
-        font-size: 25px;
-        font-family: 'Libre Franklin', sans-serif;
-        font-weight: bolder;
-    }
-    .section-002 #two{
-        font-size: 15px;
-        font-family: 'Libre Franklin', sans-serif;
     }
     .section-003{
         width:100%;
         
         margin-top: 40px;
         margin-bottom: 40px;
+        border:1px solid yellow;
+        display :flex;
     }
     .section-004{
-        margin-bottom: 100px;
-        margin-left: -230px;
-        margin-right: -230px;
+        width:100%;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border:1px solid green;
+        display:flex;
     }
-    .section-005{
-        margin: 50px;
+    .section-002-picture-001{
+        text-align: center;
+        border:1px solid green;
+        flex:1;
+        
+    }
+    .section-003-picture-001{
+        flex:1;
         text-align: center;
     }
-    .section-005 a{
-        border: 2px black solid;
-        padding: 15px;
+    .section-003-picture-002{
+        flex:1;
+        text-align: center;
     }
-
+    .section-004-picture-001{
+        flex:1;
+        text-align: center;
+    }
+    .section-004-picture-002{
+        flex:1;
+        text-align: center;
+    }
+    .section-004-picture-003{
+        flex:1;
+        text-align: center;
+    }
  
     a:link{
         text-decoration: none; color:black;
