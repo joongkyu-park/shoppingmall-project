@@ -1,22 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <html>
 
 <head>
-    <meta charset="EUC-KR" />
+    <meta charset="UTF-8" />
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
-    <title>¾Æ¸ÞÄ«Áö ºê·£µå MOAA(¸ð¾Æ) °ø½Ä¸ô ÀÔ´Ï´Ù.</title>
-    <link rel="stylesheet" href="style.css">
+    <title>ì•„ë©”ì¹´ì§€ ë¸Œëžœë“œ MOAA(ëª¨ì•„) ê³µì‹ëª° ìž…ë‹ˆë‹¤.</title>
+    <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="css/shop.css">
 </head>
 
 <body>
     <header>
         <div id="logo">
-            <a href="index.html">
+            <a href="index.jsp">
                 <img src="images/moaa.png" width="170px" height="30px">
             </a>
         </div>
@@ -35,14 +37,14 @@
             </div>
             <div class="menu" id="menu">
                 <div>
-                    <a href="about.html" style="color:dimgray">ABOUT
+                    <a href="about.jsp" style="color:dimgray">ABOUT
                     </a>
                 </div>
                 <div>
-                    <a href="shop.html" style="color:dimgray">SHOP</a></div>
+                    <a href="shop.jsp" style="color:dimgray">SHOP</a></div>
                 <div>
-                    <a href="lookbook.html" style="color:dimgray">LOOKBOOK</a></div>
-                <div><a href="community.html" style="color:dimgray">COMMUNITY</a></div>
+                    <a href="lookbook.jsp" style="color:dimgray">LOOKBOOK</a></div>
+                <div><a href="community.jsp" style="color:dimgray">COMMUNITY</a></div>
             </div>
             <div class="menu">
                 <i class="fas fa-search"></i>
@@ -55,49 +57,49 @@
     <main>
         <div>
             <div class="container" id="row1">
-                <div class="item" onclick="location.href='./product.html'"  style="cursor:pointer;">
+                <div class="item" onclick="location.href='./product.jsp'"  style="cursor:pointer;">
                     <img src="./images/clothes.jpg" alt="">
                     <div class="cost">
-                        ÄÄÆ÷Æ® ½ºÆ÷Æ® ÆÒÃ÷ ¼Â¾÷<br>
+                        ì»´í¬íŠ¸ ìŠ¤í¬íŠ¸ íŒ¬ì¸  ì…‹ì—…<br>
                         (BROWN)<br>
-                        <span id="brown">176,800¿ø</span>
-                        <span id="postcost">208,000¿ø</span>
+                        <span id="brown">176,800ì›</span>
+                        <span id="postcost">208,000ì›</span>
                     </div>
                     <div class="sale">
                           SALE  
                     </div>
                 </div>
-                <div class="item" onclick="location.href='./product.html'"  style="cursor:pointer;">
+                <div class="item" onclick="location.href='./product.jsp'"  style="cursor:pointer;">
                     <img src="./images/clothes.jpg" alt="">
                     <div class="cost">
-                        ÄÄÆ÷Æ® ½ºÆ÷Æ® ÆÒÃ÷ ¼Â¾÷<br>
+                        ì»´í¬íŠ¸ ìŠ¤í¬íŠ¸ íŒ¬ì¸  ì…‹ì—…<br>
                         (BROWN)<br>
-                        <span id="brown">176,800¿ø</span>
-                        <span id="postcost">208,000¿ø</span>
+                        <span id="brown">176,800ì›</span>
+                        <span id="postcost">208,000ì›</span>
                     </div>
                     <div class="sale">
                           SALE  
                     </div>
                 </div>
-                <div class="item" onclick="location.href='./product.html'"  style="cursor:pointer;">
+                <div class="item" onclick="location.href='./product.jsp'"  style="cursor:pointer;">
                     <img src="./images/clothes.jpg" alt="">
                     <div class="cost">
-                        ÄÄÆ÷Æ® ½ºÆ÷Æ® ÆÒÃ÷ ¼Â¾÷<br>
+                        ì»´í¬íŠ¸ ìŠ¤í¬íŠ¸ íŒ¬ì¸  ì…‹ì—…<br>
                         (BROWN)<br>
-                        <span id="brown">176,800¿ø</span>
-                        <span id="postcost">208,000¿ø</span>
+                        <span id="brown">176,800ì›</span>
+                        <span id="postcost">208,000ì›</span>
                     </div>
                     <div class="sale">
                           SALE  
                     </div>
                 </div>
-                <div class="item" onclick="location.href='./product.html'"  style="cursor:pointer;">
+                <div class="item" onclick="location.href='./product.jsp'"  style="cursor:pointer;">
                     <img src="./images/clothes.jpg" alt="">
                     <div class="cost">
-                        ÄÄÆ÷Æ® ½ºÆ÷Æ® ÆÒÃ÷ ¼Â¾÷<br>
+                        ì»´í¬íŠ¸ ìŠ¤í¬íŠ¸ íŒ¬ì¸  ì…‹ì—…<br>
                         (BROWN)<br>
-                        <span id="brown">176,800¿ø</span>
-                        <span id="postcost">208,000¿ø</span>
+                        <span id="brown">176,800ì›</span>
+                        <span id="postcost">208,000ì›</span>
                     </div>
                     <div class="sale">
                           SALE  
@@ -105,49 +107,49 @@
                 </div>
             </div>
             <div class="container" id="row2">
-                <div class="item" onclick="location.href='./product.html'"  style="cursor:pointer;">
+                <div class="item" onclick="location.href='./product.jsp'"  style="cursor:pointer;">
                     <img src="./images/clothes.jpg" alt="">
                     <div class="cost">
-                        ÄÄÆ÷Æ® ½ºÆ÷Æ® ÆÒÃ÷ ¼Â¾÷<br>
+                        ì»´í¬íŠ¸ ìŠ¤í¬íŠ¸ íŒ¬ì¸  ì…‹ì—…<br>
                         (BROWN)<br>
-                        <span id="brown">176,800¿ø</span>
-                        <span id="postcost">208,000¿ø</span>
+                        <span id="brown">176,800ì›</span>
+                        <span id="postcost">208,000ì›</span>
                     </div>
                     <div class="sale">
                           SALE  
                     </div>
                 </div>
-                <div class="item" onclick="location.href='./product.html'"  style="cursor:pointer;">
+                <div class="item" onclick="location.href='./product.jsp'"  style="cursor:pointer;">
                     <img src="./images/clothes.jpg" alt="">
                     <div class="cost">
-                        ÄÄÆ÷Æ® ½ºÆ÷Æ® ÆÒÃ÷ ¼Â¾÷<br>
+                        ì»´í¬íŠ¸ ìŠ¤í¬íŠ¸ íŒ¬ì¸  ì…‹ì—…<br>
                         (BROWN)<br>
-                        <span id="brown">176,800¿ø</span>
-                        <span id="postcost">208,000¿ø</span>
+                        <span id="brown">176,800ì›</span>
+                        <span id="postcost">208,000ì›</span>
                     </div>
                     <div class="sale">
                           SALE  
                     </div>
                 </div>
-                <div class="item" onclick="location.href='./product.html'"  style="cursor:pointer;">
+                <div class="item" onclick="location.href='./product.jsp'"  style="cursor:pointer;">
                     <img src="./images/clothes.jpg" alt="">
                     <div class="cost">
-                        ÄÄÆ÷Æ® ½ºÆ÷Æ® ÆÒÃ÷ ¼Â¾÷<br>
+                        ì»´í¬íŠ¸ ìŠ¤í¬íŠ¸ íŒ¬ì¸  ì…‹ì—…<br>
                         (BROWN)<br>
-                        <span id="brown">176,800¿ø</span>
-                        <span id="postcost">208,000¿ø</span>
+                        <span id="brown">176,800ì›</span>
+                        <span id="postcost">208,000ì›</span>
                     </div>
                     <div class="sale">
                           SALE  
                     </div>
                 </div>
-                <div class="item" onclick="location.href='./product.html'"  style="cursor:pointer;">
+                <div class="item" onclick="location.href='./product.jsp'"  style="cursor:pointer;">
                     <img src="./images/clothes.jpg" alt="">
                     <div class="cost">
-                        ÄÄÆ÷Æ® ½ºÆ÷Æ® ÆÒÃ÷ ¼Â¾÷<br>
+                        ì»´í¬íŠ¸ ìŠ¤í¬íŠ¸ íŒ¬ì¸  ì…‹ì—…<br>
                         (BROWN)<br>
-                        <span id="brown">176,800¿ø</span>
-                        <span id="postcost">208,000¿ø</span>
+                        <span id="brown">176,800ì›</span>
+                        <span id="postcost">208,000ì›</span>
                     </div>
                     <div class="sale">
                           SALE  
@@ -155,49 +157,49 @@
                 </div>
             </div>
             <div class="container" id="row3">
-                <div class="item" onclick="location.href='./product.html'"  style="cursor:pointer;">
+                <div class="item" onclick="location.href='./product.jsp'"  style="cursor:pointer;">
                     <img src="./images/clothes.jpg" alt="">
                     <div class="cost">
-                        ÄÄÆ÷Æ® ½ºÆ÷Æ® ÆÒÃ÷ ¼Â¾÷<br>
+                        ì»´í¬íŠ¸ ìŠ¤í¬íŠ¸ íŒ¬ì¸  ì…‹ì—…<br>
                         (BROWN)<br>
-                        <span id="brown">176,800¿ø</span>
-                        <span id="postcost">208,000¿ø</span>
+                        <span id="brown">176,800ì›</span>
+                        <span id="postcost">208,000ì›</span>
                     </div>
                     <div class="sale">
                           SALE  
                     </div>
                 </div>
-                <div class="item" onclick="location.href='./product.html'"  style="cursor:pointer;">
+                <div class="item" onclick="location.href='./product.jsp'"  style="cursor:pointer;">
                     <img src="./images/clothes.jpg" alt="">
                     <div class="cost">
-                        ÄÄÆ÷Æ® ½ºÆ÷Æ® ÆÒÃ÷ ¼Â¾÷<br>
+                        ì»´í¬íŠ¸ ìŠ¤í¬íŠ¸ íŒ¬ì¸  ì…‹ì—…<br>
                         (BROWN)<br>
-                        <span id="brown">176,800¿ø</span>
-                        <span id="postcost">208,000¿ø</span>
+                        <span id="brown">176,800ì›</span>
+                        <span id="postcost">208,000ì›</span>
                     </div>
                     <div class="sale">
                           SALE  
                     </div>
                 </div>
-                <div class="item" onclick="location.href='./product.html'"  style="cursor:pointer;">
+                <div class="item" onclick="location.href='./product.jsp'"  style="cursor:pointer;">
                     <img src="./images/clothes.jpg" alt="">
                     <div class="cost">
-                        ÄÄÆ÷Æ® ½ºÆ÷Æ® ÆÒÃ÷ ¼Â¾÷<br>
+                        ì»´í¬íŠ¸ ìŠ¤í¬íŠ¸ íŒ¬ì¸  ì…‹ì—…<br>
                         (BROWN)<br>
-                        <span id="brown">176,800¿ø</span>
-                        <span id="postcost">208,000¿ø</span>
+                        <span id="brown">176,800ì›</span>
+                        <span id="postcost">208,000ì›</span>
                     </div>
                     <div class="sale">
                           SALE  
                     </div>
                 </div>
-                <div class="item" onclick="location.href='./product.html'"  style="cursor:pointer;">
+                <div class="item" onclick="location.href='./product.jsp'"  style="cursor:pointer;">
                     <img src="./images/clothes.jpg" alt="">
                     <div class="cost">
-                        ÄÄÆ÷Æ® ½ºÆ÷Æ® ÆÒÃ÷ ¼Â¾÷<br>
+                        ì»´í¬íŠ¸ ìŠ¤í¬íŠ¸ íŒ¬ì¸  ì…‹ì—…<br>
                         (BROWN)<br>
-                        <span id="brown">176,800¿ø</span>
-                        <span id="postcost">208,000¿ø</span>
+                        <span id="brown">176,800ì›</span>
+                        <span id="postcost">208,000ì›</span>
                     </div>
                     <div class="sale">
                           SALE  
@@ -205,49 +207,49 @@
                 </div>
             </div>
             <div class="container" id="row4">
-                <div class="item" onclick="location.href='./product.html'"  style="cursor:pointer;">
+                <div class="item" onclick="location.href='./product.jsp'"  style="cursor:pointer;">
                     <img src="./images/clothes.jpg" alt="">
                     <div class="cost">
-                        ÄÄÆ÷Æ® ½ºÆ÷Æ® ÆÒÃ÷ ¼Â¾÷<br>
+                        ì»´í¬íŠ¸ ìŠ¤í¬íŠ¸ íŒ¬ì¸  ì…‹ì—…<br>
                         (BROWN)<br>
-                        <span id="brown">176,800¿ø</span>
-                        <span id="postcost">208,000¿ø</span>
+                        <span id="brown">176,800ì›</span>
+                        <span id="postcost">208,000ì›</span>
                     </div>
                     <div class="sale">
                           SALE  
                     </div>
                 </div>
-                <div class="item" onclick="location.href='./product.html'"  style="cursor:pointer;">
+                <div class="item" onclick="location.href='./product.jsp'"  style="cursor:pointer;">
                     <img src="./images/clothes.jpg" alt="">
                     <div class="cost">
-                        ÄÄÆ÷Æ® ½ºÆ÷Æ® ÆÒÃ÷ ¼Â¾÷<br>
+                        ì»´í¬íŠ¸ ìŠ¤í¬íŠ¸ íŒ¬ì¸  ì…‹ì—…<br>
                         (BROWN)<br>
-                        <span id="brown">176,800¿ø</span>
-                        <span id="postcost">208,000¿ø</span>
+                        <span id="brown">176,800ì›</span>
+                        <span id="postcost">208,000ì›</span>
                     </div>
                     <div class="sale">
                           SALE  
                     </div>
                 </div>
-                <div class="item" onclick="location.href='./product.html'"  style="cursor:pointer;">
+                <div class="item" onclick="location.href='./product.jsp'"  style="cursor:pointer;">
                     <img src="./images/clothes.jpg" alt="">
                     <div class="cost">
-                        ÄÄÆ÷Æ® ½ºÆ÷Æ® ÆÒÃ÷ ¼Â¾÷<br>
+                        ì»´í¬íŠ¸ ìŠ¤í¬íŠ¸ íŒ¬ì¸  ì…‹ì—…<br>
                         (BROWN)<br>
-                        <span id="brown">176,800¿ø</span>
-                        <span id="postcost">208,000¿ø</span>
+                        <span id="brown">176,800ì›</span>
+                        <span id="postcost">208,000ì›</span>
                     </div>
                     <div class="sale">
                           SALE  
                     </div>
                 </div>
-                <div class="item" onclick="location.href='./product.html'"  style="cursor:pointer;">
+                <div class="item" onclick="location.href='./product.jsp'"  style="cursor:pointer;">
                     <img src="./images/clothes.jpg" alt="">
                     <div class="cost">
-                        ÄÄÆ÷Æ® ½ºÆ÷Æ® ÆÒÃ÷ ¼Â¾÷<br>
+                        ì»´í¬íŠ¸ ìŠ¤í¬íŠ¸ íŒ¬ì¸  ì…‹ì—…<br>
                         (BROWN)<br>
-                        <span id="brown">176,800¿ø</span>
-                        <span id="postcost">208,000¿ø</span>
+                        <span id="brown">176,800ì›</span>
+                        <span id="postcost">208,000ì›</span>
                     </div>
                     <div class="sale">
                           SALE  
@@ -271,16 +273,16 @@
                 <i class="fab fa-blogger-b"></i>
             </a>
         </div><br><br>
-        ÀÌ¿ë¾à°ü °³ÀÎÁ¤º¸Ã³¸®¹æÄ§ »ç¾÷ÀÚÁ¤º¸È®ÀÎ<br><br>
+        ì´ìš©ì•½ê´€ ê°œì¸ì •ë³´ì²˜ë¦¬ë°©ì¹¨ ì‚¬ì—…ìžì •ë³´í™•ì¸<br><br>
 
-        »óÈ£: MOAA | ´ëÇ¥: ¹ÚÁß±Ô | °³ÀÎÁ¤º¸°ü¸®Ã¥ÀÓÀÚ: ¹ÚÁß±Ô | ÀüÈ­: 010-1234-5678 | ÀÌ¸ÞÀÏ: xxxx@xxxx.com<br><br>
+        ìƒí˜¸: MOAA | ëŒ€í‘œ: ë°•ì¤‘ê·œ | ê°œì¸ì •ë³´ê´€ë¦¬ì±…ìž„ìž: ë°•ì¤‘ê·œ | ì „í™”: 010-1234-5678 | ì´ë©”ì¼: xxxx@xxxx.com<br><br>
 
-        ÀÌ À¥»çÀÌÆ®´Â °³ÀÎ ÇÁ·ÎÁ§Æ®¸¦ À§ÇÑ À¥»çÀÌÆ®ÀÔ´Ï´Ù. »ó¾÷Àû ¿µ¸®Àû ¿ëµµ°¡ ¾Æ´Õ´Ï´Ù. ÀÌ À¥»çÀÌÆ®´Â °³ÀÎ ÇÁ·ÎÁ§Æ®¸¦ À§ÇÑ À¥»çÀÌÆ®ÀÔ´Ï´Ù. »ó¾÷Àû ¿µ¸®Àû ¿ëµµ°¡ ¾Æ´Õ´Ï´Ù.<br><br><br>
+        ì´ ì›¹ì‚¬ì´íŠ¸ëŠ” ê°œì¸ í”„ë¡œì íŠ¸ë¥¼ ìœ„í•œ ì›¹ì‚¬ì´íŠ¸ìž…ë‹ˆë‹¤. ìƒì—…ì  ì˜ë¦¬ì  ìš©ë„ê°€ ì•„ë‹™ë‹ˆë‹¤. ì´ ì›¹ì‚¬ì´íŠ¸ëŠ” ê°œì¸ í”„ë¡œì íŠ¸ë¥¼ ìœ„í•œ ì›¹ì‚¬ì´íŠ¸ìž…ë‹ˆë‹¤. ìƒì—…ì  ì˜ë¦¬ì  ìš©ë„ê°€ ì•„ë‹™ë‹ˆë‹¤.<br><br><br>
 
         <div>
             <img src="https://pbs.twimg.com/profile_images/1210194702/_____400x400.gif" width="20px" height="20px"
                 onclick="location.href='https://www.inha.ac.kr/kr/index.do'" style="cursor:pointer;"><span
-                id="school">ÀÎÇÏ´ëÇÐ±³ ÄÄÇ»ÅÍ°øÇÐ°ú</span>
+                id="school">ì¸í•˜ëŒ€í•™êµ ì»´í“¨í„°ê³µí•™ê³¼</span>
         </div>
     </footer>
 </body>

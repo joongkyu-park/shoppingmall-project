@@ -1,7 +1,10 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
 <html>
 
 <head>
-    <meta charset="EUC-KR" />
+    <meta charset="UTF-8" />
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -9,39 +12,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;700&display=swap" rel="stylesheet">
 
-    <title>�Ƹ�ī�� �귣�� MOAA(���) ���ĸ� �Դϴ�.</title>
-
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop.css">
+    
 </head>
 
 <body>
-    <style>
-        .section-001 {
-            margin: 0;
-
-            text-align: center;
-
-            font-family: 'Nanum Gothic', sans-serif;
-            font-size: 14px;
-
-            border-bottom: 1px solid black;
-        }
-        .section-001 #intro{
-            margin-top: 50px;
-            margin-bottom: 100px;
-            line-height: 200%;
-        }
-        .section-002{
-            border-bottom: 1px solid black;
-            padding-top: 100px;
-            padding-bottom: 150px;
-        }
-    </style>
-
+ 
     <header>
         <div id="logo">
-            <a href="index.html">
+            <a href="index.jsp">
                 <img src="images/moaa.png" width="170px" height="30px">
             </a>
         </div>
@@ -60,14 +43,14 @@
             </div>
             <div class="menu" id="menu">
                 <div>
-                    <a href="about.html" style="color:dimgray">ABOUT
+                    <a href="about.jsp" style="color:dimgray">ABOUT
                     </a>
                 </div>
                 <div>
-                    <a href="shop.html" style="color:dimgray">SHOP</a></div>
+                    <a href="shop.jsp" style="color:dimgray">SHOP</a></div>
                 <div>
-                    <a href="lookbook.html" style="color:dimgray">LOOKBOOK</a></div>
-                <div><a href="community.html" style="color:dimgray">COMMUNITY</a></div>
+                    <a href="lookbook.jsp" style="color:dimgray">LOOKBOOK</a></div>
+                <div><a href="community.jsp" style="color:dimgray">COMMUNITY</a></div>
             </div>
             <div class="menu">
                 <i class="fas fa-search"></i>
@@ -78,33 +61,10 @@
     </header>
 
 
-    <main>
+    <script type="text/javascript">
+		location.href = 'main.jsp';
+	</script>
 
-        <section class="section-001">
-            <div id="frontimage"><img
-                    src="https://contents.sixshop.com/thumbnails/uploadedFiles/36396/default/image_1564034870152_1500.jpg">
-            </div>
-
-            <div id="intro">
-                <strong>MOAA�� �Ƹ޸�ĭ ĳ��� ��Ÿ���� ���������� �귣���Դϴ�.</strong><br>
-                �ϻ� �ӿ��� �ڿ������� ���� ������ �̾߱⸦ ��Ÿ�Ͽ� ����� �մϴ�.
-            </div>
-
-        </section>
-
-        <section class="section-002">
-
-            <div class="section-002-picture-001"><img src="images/moaa_collabo.jpg"></div>
-
-        </section>
-
-        <section class="section-003">
-
-        </section>
-
-        <section class="section-004">
-
-        </section>
     </main>
 
     <footer>
@@ -119,16 +79,16 @@
                 <i class="fab fa-blogger-b"></i>
             </a>
         </div><br><br>
-        �̿��� ��������ó����ħ ���������Ȯ��<br><br>
+        ÀÌ¿ë¾à°ü °³ÀÎÁ¤º¸Ã³¸®¹æÄ§ »ç¾÷ÀÚÁ¤º¸È®ÀÎ<br><br>
 
-        ��ȣ: MOAA | ��ǥ: ���߱� | ������������å����: ���߱� | ��ȭ: 010-1234-5678 | �̸���: xxxx@xxxx.com<br><br>
+        »óÈ£: MOAA | ´ëÇ¥: ¹ÚÁß±Ô | °³ÀÎÁ¤º¸°ü¸®Ã¥ÀÓÀÚ: ¹ÚÁß±Ô | ÀüÈ­: 010-1234-5678 | ÀÌ¸ÞÀÏ: xxxx@xxxx.com<br><br>
 
-        �� ������Ʈ�� ���� ������Ʈ�� ���� ������Ʈ�Դϴ�. ����� ������ �뵵�� �ƴմϴ�. �� ������Ʈ�� ���� ������Ʈ�� ���� ������Ʈ�Դϴ�. ����� ������ �뵵�� �ƴմϴ�.<br><br><br>
+        ÀÌ À¥»çÀÌÆ®´Â °³ÀÎ ÇÁ·ÎÁ§Æ®¸¦ À§ÇÑ À¥»çÀÌÆ®ÀÔ´Ï´Ù. »ó¾÷Àû ¿µ¸®Àû ¿ëµµ°¡ ¾Æ´Õ´Ï´Ù. ÀÌ À¥»çÀÌÆ®´Â °³ÀÎ ÇÁ·ÎÁ§Æ®¸¦ À§ÇÑ À¥»çÀÌÆ®ÀÔ´Ï´Ù. »ó¾÷Àû ¿µ¸®Àû ¿ëµµ°¡ ¾Æ´Õ´Ï´Ù.<br><br><br>
 
         <div>
             <img src="https://pbs.twimg.com/profile_images/1210194702/_____400x400.gif" width="20px" height="20px"
                 onclick="location.href=' https://www.inha.ac.kr/kr/index.do'" style="cursor:pointer;"><span
-                id="school">���ϴ��б� ��ǻ�Ͱ��а�</span>
+                id="school">ÀÎÇÏ´ëÇÐ±³ ÄÄÇ»ÅÍ°øÇÐ°ú</span>
         </div>
     </footer>
 
