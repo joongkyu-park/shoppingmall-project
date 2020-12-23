@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+
 <html>
 
 <head>
@@ -24,36 +25,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.slider').bxSlider();
-        });
-    </script>
-
+   
 </head>
 
 <body>
-    <style>
-        .slider div {
-            width: 40em;
-            height: 1000px;
-            margin: 0;
-            overflow:hidden; position:relative;
-        }
-
-        .slider img {
-
-            position: absolute;
-
-            left: 25%;
-
-            margin-left:0px;
-
-            height: 1000px;
-
-        }
-    </style>
-
+	<style>
+	#product{
+		text-align:center;
+	}
+	</style>
+	
     <header>
         <div id="logo">
             <a href="index.jsp">
@@ -85,7 +66,7 @@
                 <div><a href="community.jsp" style="color:dimgray">COMMUNITY</a></div>
             </div>
             <div class="menu">
-                <a href="admin.jsp" target="_self">
+               <a href="admin.jsp" target="_self">
                 	<i class="fas fa-search"></i>
                 </a>
                 <a href="user.jsp" target="_self">
@@ -96,17 +77,24 @@
                 </a>
             </div>
         </div>
-
     </header>
 
+
     <main>
-        <div class="slider">
-            <div><img src="https://contents.sixshop.com/thumbnails/uploadedFiles/36396/blogPost/image_1548999955589_1000.jpg" /></div>
-            <div><img src="https://contents.sixshop.com/thumbnails/uploadedFiles/36396/blogPost/image_1549000036733_1000.jpg"  /></div>
-            <div><img src="https://contents.sixshop.com/thumbnails/uploadedFiles/36396/blogPost/image_1548999955870_1000.jpg"  /></div>
-            <div><img src="https://contents.sixshop.com/thumbnails/uploadedFiles/36396/blogPost/image_1548999956376_1000.jpg"  /></div>
-            <div><img src="https://contents.sixshop.com/thumbnails/uploadedFiles/36396/blogPost/image_1548999956548_1000.jpg"  /></div>
-        </div>
+    
+    
+    	<div id="product">
+    		<img src="./images/clothes.jpg" alt="" width="500" height="700" >
+    	
+		<form method="post" action="addProduct.jsp" >
+		 <select name="product">
+            <option value ="comfort sports pants setup ">comfort sports pants setup</option>
+        </select> 
+            
+			<input type="submit" value="장바구니에 추가">
+		</form>
+		</div>
+		<br><br>
     </main>
 
     <footer>
@@ -133,6 +121,5 @@
                 id="school">인하대학교 컴퓨터공학과</span>
         </div>
     </footer>
-</body>
 
 </html>

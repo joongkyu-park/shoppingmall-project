@@ -1,7 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
+<%@ page import="user.UserDAO"%>
+<%@ page import="user.User"%>
+<%@ page import="java.io.PrintWriter"%>
+<%@ page import="java.util.ArrayList" %>
+<jsp:useBean id="user" class="user.User" scope="page" />
+<!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8" />
     
@@ -24,37 +29,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.slider').bxSlider();
-        });
-    </script>
-
+   
 </head>
-
 <body>
-    <style>
-        .slider div {
-            width: 40em;
-            height: 1000px;
-            margin: 0;
-            overflow:hidden; position:relative;
-        }
-
-        .slider img {
-
-            position: absolute;
-
-            left: 25%;
-
-            margin-left:0px;
-
-            height: 1000px;
-
-        }
-    </style>
-
-    <header>
+ <header>
         <div id="logo">
             <a href="index.jsp">
                 <img src="images/moaa.png" width="170px" height="30px">
@@ -96,18 +74,94 @@
                 </a>
             </div>
         </div>
-
     </header>
 
-    <main>
-        <div class="slider">
-            <div><img src="https://contents.sixshop.com/thumbnails/uploadedFiles/36396/blogPost/image_1548999955589_1000.jpg" /></div>
-            <div><img src="https://contents.sixshop.com/thumbnails/uploadedFiles/36396/blogPost/image_1549000036733_1000.jpg"  /></div>
-            <div><img src="https://contents.sixshop.com/thumbnails/uploadedFiles/36396/blogPost/image_1548999955870_1000.jpg"  /></div>
-            <div><img src="https://contents.sixshop.com/thumbnails/uploadedFiles/36396/blogPost/image_1548999956376_1000.jpg"  /></div>
-            <div><img src="https://contents.sixshop.com/thumbnails/uploadedFiles/36396/blogPost/image_1548999956548_1000.jpg"  /></div>
-        </div>
-    </main>
+<style>
+    table {
+	    width: 100%;
+	    border: 1px solid #444444;
+	    border-collapse: collapse;
+	  }
+	th, td {
+	    border: 1px solid #444444;
+	    padding: 10px;
+	  }
+	  main{
+	  text-align:center;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 12px;
+        margin:100px;
+	  }
+	  main span{
+	 	 color:red;
+	  }
+</style>
+<%
+		String userID = "";
+		if((String)session.getAttribute("userID") != null){
+			userID = (String)session.getAttribute("userID");
+		}
+		if(userID.equals("admin")){%>
+			<script type="text/javascript">
+			alert("관리자님이 입장하였습니다.");
+			</script>
+			
+			<%
+		}
+		
+		else{%>
+			<script type="text/javascript">
+			alert("관리자만 접근할 수 있습니다.");
+			location.href = 'main.jsp';
+			</script>
+			<%
+		}
+%>
+<main>
+<h1> Administrator page-모든 회원정보 조회 </h1>
+
+<%
+	UserDAO userDAO = new UserDAO();
+	ArrayList<User> list = userDAO.getMemberList();
+
+	int counter = list.size();
+
+	if(counter > 0){
+%>		
+	<table>
+
+	<tr>
+		<td align="center"><b>아이디</b></td>
+		<td align="center"><b>암호</b></td>
+		<td align="center"><b>이름</b></td>
+		<td align="center"><b>성별</b></td>
+		<td align="center"><b>이메일</b></td>
+	</tr>
+
+	<%
+		// for(int i = 0 ; i < list.size() ; i++){
+		for(User member : list){
+	%>	
+
+	<tr>
+		<td align="center"><%=member.getUserID() %></td>
+		<td align="center"><%=member.getUserPassword() %></td>
+		<td align="center"><%=member.getUserName() %></td>
+		<td align="center"><%=member.getUserGender() %></td>		
+		<td align="center"><%=member.getUserEmail() %></td>
+	</tr>
+<%
+		}
+%>
+	</table>
+<%
+		}
+%>
+<p>
+<br><br>
+	<h2>조회된 회원수는 <span><%= counter %></span> 명 입니다.</h2>
+
+</main>
 
     <footer>
         <div class="menu">
@@ -134,5 +188,4 @@
         </div>
     </footer>
 </body>
-
 </html>

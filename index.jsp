@@ -53,9 +53,15 @@
                 <div><a href="community.jsp" style="color:dimgray">COMMUNITY</a></div>
             </div>
             <div class="menu">
-                <i class="fas fa-search"></i>
-                <i class="fas fa-user"></i>
-                <i class="fas fa-shopping-cart"></i>
+                <a href="admin.jsp" target="_self">
+                	<i class="fas fa-search"></i>
+                </a>
+                <a href="user.jsp" target="_self">
+                	<i class="fas fa-user"></i>
+                </a>
+                <a href="checkout.jsp" target="_self">
+                	<i class="fas fa-shopping-cart"></i>
+                </a>
             </div>
         </div>
     </header>
@@ -65,7 +71,6 @@
 		location.href = 'main.jsp';
 	</script>
 
-    </main>
 
     <footer>
         <div class="menu">
@@ -79,16 +84,16 @@
                 <i class="fab fa-blogger-b"></i>
             </a>
         </div><br><br>
-        ÀÌ¿ë¾à°ü °³ÀÎÁ¤º¸Ã³¸®¹æÄ§ »ç¾÷ÀÚÁ¤º¸È®ÀÎ<br><br>
+        이용약관 개인정보처리방침 사업자정보확인<br><br>
 
-        »óÈ£: MOAA | ´ëÇ¥: ¹ÚÁß±Ô | °³ÀÎÁ¤º¸°ü¸®Ã¥ÀÓÀÚ: ¹ÚÁß±Ô | ÀüÈ­: 010-1234-5678 | ÀÌ¸ÞÀÏ: xxxx@xxxx.com<br><br>
+        상호: MOAA | 대표: 박중규 | 개인정보관리책임자: 박중규 | 전화: 010-1234-5678 | 이메일: xxxx@xxxx.com<br><br>
 
-        ÀÌ À¥»çÀÌÆ®´Â °³ÀÎ ÇÁ·ÎÁ§Æ®¸¦ À§ÇÑ À¥»çÀÌÆ®ÀÔ´Ï´Ù. »ó¾÷Àû ¿µ¸®Àû ¿ëµµ°¡ ¾Æ´Õ´Ï´Ù. ÀÌ À¥»çÀÌÆ®´Â °³ÀÎ ÇÁ·ÎÁ§Æ®¸¦ À§ÇÑ À¥»çÀÌÆ®ÀÔ´Ï´Ù. »ó¾÷Àû ¿µ¸®Àû ¿ëµµ°¡ ¾Æ´Õ´Ï´Ù.<br><br><br>
+        이 웹사이트는 개인 프로젝트를 위한 웹사이트입니다. 상업적 영리적 용도가 아닙니다. 이 웹사이트는 개인 프로젝트를 위한 웹사이트입니다. 상업적 영리적 용도가 아닙니다.<br><br><br>
 
         <div>
             <img src="https://pbs.twimg.com/profile_images/1210194702/_____400x400.gif" width="20px" height="20px"
                 onclick="location.href=' https://www.inha.ac.kr/kr/index.do'" style="cursor:pointer;"><span
-                id="school">ÀÎÇÏ´ëÇÐ±³ ÄÄÇ»ÅÍ°øÇÐ°ú</span>
+                id="school">인하대학교 컴퓨터공학과</span>
         </div>
     </footer>
 

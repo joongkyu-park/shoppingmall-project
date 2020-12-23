@@ -69,8 +69,15 @@
 				</div>
 			</div>
 			<div class="menu">
-				<i class="fas fa-search"></i> <i class="fas fa-user"></i> <i
-					class="fas fa-shopping-cart"></i>
+				<a href="admin.jsp" target="_self">
+                	<i class="fas fa-search"></i>
+                </a>
+                <a href="user.jsp" target="_self">
+                	<i class="fas fa-user"></i>
+                </a>
+                <a href="checkout.jsp" target="_self">
+                	<i class="fas fa-shopping-cart"></i>
+                </a>
 			</div>
 		</div>
 	</header>
@@ -81,12 +88,27 @@
 		UserDAO userDAO = new UserDAO();
 		User userInfo = userDAO.getUserInfo(userID);
 	%>
-	
+	<style>
+	table {
+	    width: 100%;
+	    border: 1px solid #444444;
+	    border-collapse: collapse;
+	  }
+	th, td {
+	    border: 1px solid #444444;
+	    padding: 10px;
+	  }
+	  main{
+	  text-align:center;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 12px;
+        margin:100px;
+	  }
+	</style>
 	<main>
 	<div id="wrap">
-		<br> <br> <b><font size="5" color="gray">회원가입 정보를
-				확인하세요.</font></b> <br> <br> <font color="blue"><%=userInfo.getUserID() %></font>님의
-		회원정보 <br> <br>
+		<br> <br> <b><font size="5" color="black">회원가입 정보를 확인하세요.</font></b> <br> <br> 
+		<h2><font color="blue"><%=userInfo.getUserID() %></font> 님의 회원정보</h2> <br> 
 
 		<%-- 자바빈에서 입력된 값을 추출한다. --%>
 		<table border=1>
@@ -117,12 +139,13 @@
 
 		</table>
 
-		<br> <input type="button" value="확인" onclick="location.href='index.jsp'">
+		<br> <input type="button" value="확인" onclick="location.href='index.jsp'">  
+		<input type="button" onclick="location.href='logoutAction.jsp'"
+		value="로그아웃">
 	</div>
 	
 
-	<input type="button" onclick="location.href='logoutAction.jsp'"
-		value="로그아웃">
+	
 
 	</main>
 

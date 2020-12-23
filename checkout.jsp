@@ -1,5 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+>><%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@page import="java.util.ArrayList"%>
 <html>
 
 <head>
@@ -24,35 +25,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.slider').bxSlider();
-        });
-    </script>
-
+   
 </head>
 
 <body>
-    <style>
-        .slider div {
-            width: 40em;
-            height: 1000px;
-            margin: 0;
-            overflow:hidden; position:relative;
-        }
-
-        .slider img {
-
-            position: absolute;
-
-            left: 25%;
-
-            margin-left:0px;
-
-            height: 1000px;
-
-        }
-    </style>
 
     <header>
         <div id="logo">
@@ -96,17 +72,68 @@
                 </a>
             </div>
         </div>
-
     </header>
+	<style>
+	#checkout{
+		text-align:center;
+		margin-top:50px;
+		margin-bottom:150px;
+		}
+		table {
+		margin-top:50px;
+	    width: 100%;
+	    border: 1px solid #444444;
+	    border-collapse: collapse;
+	  }
+	th, td {
+	    border: 1px solid #444444;
+	    padding: 10px;
+	  }
+	  main{
+	  text-align:center;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 12px;
+        margin:100px;
+	  }
+	  main span{
+	 	 color:red;
+	}
+	  
 
+	</style>
     <main>
-        <div class="slider">
-            <div><img src="https://contents.sixshop.com/thumbnails/uploadedFiles/36396/blogPost/image_1548999955589_1000.jpg" /></div>
-            <div><img src="https://contents.sixshop.com/thumbnails/uploadedFiles/36396/blogPost/image_1549000036733_1000.jpg"  /></div>
-            <div><img src="https://contents.sixshop.com/thumbnails/uploadedFiles/36396/blogPost/image_1548999955870_1000.jpg"  /></div>
-            <div><img src="https://contents.sixshop.com/thumbnails/uploadedFiles/36396/blogPost/image_1548999956376_1000.jpg"  /></div>
-            <div><img src="https://contents.sixshop.com/thumbnails/uploadedFiles/36396/blogPost/image_1548999956548_1000.jpg"  /></div>
-        </div>
+    <% 
+    	String userID =(String)session.getAttribute("userID");
+    	ArrayList<String> arr = (ArrayList)(session.getAttribute("arr"));
+    %>
+    <div id="checkout">
+    
+	<%
+		if(arr ==null){%><h2>장바구니에 상품이 없습니다</h2><br><%}else{%>
+		<table>
+
+	<tr>
+		<td align="center"><b>상품명</b></td>
+		<td align="center"><b>수량</b></td>
+	</tr>
+	<%
+			%><h2>장바구니 목록입니다.</h2><%
+		    for(String i : arr){
+		        %>
+		        
+    <tr>
+    	<td align="center"><% out.println(i); %></td>
+    	<td align="center"><% out.println(1); %></td>
+    </tr>
+	<%
+		}
+%>
+	</table>
+<%
+		}
+%>
+	</div>
+	
     </main>
 
     <footer>
@@ -133,6 +160,5 @@
                 id="school">인하대학교 컴퓨터공학과</span>
         </div>
     </footer>
-</body>
 
 </html>

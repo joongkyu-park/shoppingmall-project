@@ -1,3 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ page import="java.util.ArrayList"%>
+<%@ page import="java.io.PrintWriter"%>
 <html>
 
 <head>
@@ -13,14 +17,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/shop.css">
 
     <title>아메카지 브랜드 MOAA(모아) 공식몰 입니다.</title>
 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+   
 </head>
 
 <body>
-    
+
     <header>
         <div id="logo">
             <a href="index.jsp">
@@ -42,18 +52,20 @@
             </div>
             <div class="menu" id="menu">
                 <div>
-                    <a href="about.html" style="color:dimgray">ABOUT
+                    <a href="about.jsp" style="color:dimgray">ABOUT
                     </a>
                 </div>
                 <div>
-                    <a href="shop.html" style="color:dimgray">SHOP</a></div>
+                    <a href="shop.jsp" style="color:dimgray">SHOP</a></div>
                 <div>
-                    <a href="lookbook.html" style="color:dimgray">LOOKBOOK</a></div>
-                <div><a href="community.html" style="color:dimgray">COMMUNITY</a></div>
+                    <a href="lookbook.jsp" style="color:dimgray">LOOKBOOK</a></div>
+                <div><a href="community.jsp" style="color:dimgray">COMMUNITY</a></div>
             </div>
             <div class="menu">
                 <i class="fas fa-search"></i>
-                <i class="fas fa-user"></i>
+                <a href="user.jsp" target="_self">
+                	<i class="fas fa-user"></i>
+                </a>
                 <i class="fas fa-shopping-cart"></i>
             </div>
         </div>
@@ -61,27 +73,31 @@
 
 
     <main>
-
-        <section class="section-001">
-           
-
-        </section>
-
-        <section class="section-002">
-            
-        </section>
-
-        <section class="section-003">
-           
-        </section>
-
-        <section class="section-004">
-            
-        </section>
-
-        <section class="section-005">
-           
-        </section>
+    	<%
+    	 
+      	String userID = null;
+ 		if((String)session.getAttribute("userID") != null){
+ 			userID = (String)session.getAttribute("userID");
+ 		}
+ 		PrintWriter script = response.getWriter();
+ 		if(userID == null){
+ 			script.println("<script>");
+ 			script.println("alert('로그인을 해주세요.')");
+ 			script.println("location.href='login.jsp'");
+ 			script.println("</script>");
+ 		}
+ 		else{
+	    	String product = request.getParameter("product");
+			ArrayList<String> arr = (ArrayList)(session.getAttribute("arr"));
+			if(arr==null){ arr = new ArrayList<String>();}
+			arr.add(product);
+			session.setAttribute("arr",arr); 
+			script.println("<script>");
+			script.println("location.href='product.jsp'");
+			script.println("</script>");
+ 		}
+ 		
+		 %>
 
     </main>
 

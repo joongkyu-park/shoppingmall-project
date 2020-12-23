@@ -54,9 +54,15 @@
                 <div><a href="community.jsp" style="color:dimgray">COMMUNITY</a></div>
             </div>
             <div class="menu">
-                <i class="fas fa-search"></i>
-                <i class="fas fa-user"></i>
-                <i class="fas fa-shopping-cart"></i>
+                <a href="admin.jsp" target="_self">
+                	<i class="fas fa-search"></i>
+                </a>
+                <a href="user.jsp" target="_self">
+                	<i class="fas fa-user"></i>
+                </a>
+                <a href="checkout.jsp" target="_self">
+                	<i class="fas fa-shopping-cart"></i>
+                </a>
             </div>
         </div>
     </header>
